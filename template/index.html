@@ -1,0 +1,58 @@
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">   
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@3.x/css/materialdesignicons.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+    <h1>Look at Me</h1>
+</head>
+<body>
+    <div id="app">
+        <v-app>
+        <v-content>
+                <v-container>
+                    <v-app-bar app
+                        dark
+                        color="error"
+                    >
+
+                <v-toolbar-title
+                    class="white--text font-weight-bold"
+                >Look at Me</v-toolbar-title>
+            
+                </v-app-bar>
+                
+                <iframe src="http://localhost:8080/video" width="640" Height="480"></iframe><br/>
+                               
+            </v-container>
+
+            
+        </v-content>
+        <v-footer padless>
+                
+                <v-col
+                    class="error text-center"
+                    cols="12"
+                    no-gutters
+                    fluid
+                >
+                2022 — <strong>Look at Me</strong>
+                </v-col>
+            </v-footer>
+        </v-app>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>    
+    <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
+
+    <script>
+        new Vue({
+        el: '#app',
+        vuetify: new Vuetify(),
+        })
+
+        
+    </script>
+
+
+
+    
+</body>
